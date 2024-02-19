@@ -13,9 +13,7 @@ PiDiNet: [[Paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Su_Pixel
 Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](https://github.com/yunfan1202/Delving-into-Crispness)]
 
 ### 使用：
-进入Edge_detection/pidinet文件夹，
-
-pycharm直接运行```test_pidinet.py```即可，或者在命令行```python test_pidinet.py```
+进入Edge_detection/pidinet文件夹，BSDS_raw.pth和BSDS_refine_dice.pth两个模型已经到位了的话，pycharm直接运行```test_pidinet.py```即可，或者在命令行```python test_pidinet.py```
 
 仅使用的话可以只关注以下行，注释和变量名字也写得比较清楚了，把要检测的图片放在args.datadir下面，用args.evaluate指定模型路径，用args.savedir指定边缘检测结果的保存路径。
 ![](assets/figures/edge_detection1.jpg)
@@ -40,7 +38,7 @@ pycharm直接运行```test_pidinet.py```即可，或者在命令行```python tes
 
 ![](assets/figures/face2.jpg)
 
-然后可以将上面检测到的人脸从图片中切下来，进行后续的情绪识别。进入到Face/face_recognition，模型PrivateTest_model.t7下好后放到checkpoints目录下，直接运行```visualize.py```即可，
+然后可以将上面检测到的人脸从图片中切下来，进行后续的情绪识别。进入到Face/face_recognition，模型[PrivateTest_model.t7](/releases/checkpoints/download/PrivateTest_model.t7)下好后放到checkpoints目录下，直接运行```visualize.py```即可，
 
 ![](assets/figures/face3.jpg)
 
