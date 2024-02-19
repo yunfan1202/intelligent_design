@@ -17,13 +17,15 @@
 
 详情见[这里](./environment.md)
 
-由于大部分人都是使用Windows系统，所以本文档涉及到的所有AI技术均在W   indows上测试并成功运行。理论上来说Linux应该是更容易的，如果您使用的是MacOS或者Linux系统，可以自行查阅相关资料。
+由于大部分人都是使用Windows系统，所以本文档涉及到的所有AI技术均在Windows上测试并成功运行。理论上来说Linux应该是更容易的，如果您使用的是MacOS或者Linux系统，可以自行查阅相关资料。
 [MacOS安装pytorch](https://zhuanlan.zhihu.com/p/168748757)
 ，[Linux安装pytorch](https://zhuanlan.zhihu.com/p/642347131)
 
-**需要的python库**：本文档尽量在同一个环境中运行所有的模型，以便技术之间的组合应用，具体用到的包在[requirement.txt](./requirement.txt)中。
+**需要的python库**(库是写好的可以直接引用的代码包)：本文档尽量在同一个环境中运行所有的模型，以便技术之间的组合应用，具体用到的包在[requirement.txt](./requirement.txt)中。
 
 如果您只是单独玩其中某些项目的话，推荐直接按照步骤运行，然后缺什么库就```pip install 库的名字==版本```装什么库，***版本参考[requirement.txt](./requirement.txt)***（一般来说安装最新的库也不会有什么问题，但是如果涉及到诸如transformers这样的库，不同版本可能会报错），也可以通过```pip install -r requirements.txt```一次性全部装好。如果国内安装比较慢，记得[更换pip源](https://zhuanlan.zhihu.com/p/127275233)。
+
+举例：如果需要安装transformer这个库，运行的时候这个语句就是 pip install transformers==4.19.2，"4.19.2"这个版本号可以在requirements.txt里面查到。
 
 ## 智能感知 (Perception)
 本文档整理了大部分先进、通用、运行友好的AI感知应用，目前主要包含计算机视觉相关技术：图像的分类、分割、深度估计、边缘检测，人脸检测与分类，人体姿态估计等任务。

@@ -52,7 +52,7 @@
 
 ![](assets/figures/anaconda9.jpg)
 
-接下来便可以按项目需求安装包了，pip –V可以看到将会安装到的路径
+接下来便可以按项目需求安装包了，pip –V可以看到将会安装到的路径 (这个路径是python库的下载位置，pycharm中创建的项目位置和包的位置没关系)
 
 ![](assets/figures/anaconda10.jpg)
 
