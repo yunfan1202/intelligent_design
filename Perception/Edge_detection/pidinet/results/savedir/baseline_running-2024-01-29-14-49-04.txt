@@ -1,0 +1,8 @@
+=> loading checkpoint from 'BSDS_refine_dice.pth'
+=> loaded checkpoint 'BSDS_refine_dice.pth' successfully
+
+Namespace(checkinfo=True, config='carv4', datadir='example_image', dataset=['Custom'], dil=True, eta=0.3, evaluate='BSDS_refine_dice.pth', evaluate_converted=False, gpu='0', lmbda=1.1, model='pidinet', print_freq=10, sa=True, save_freq=1, savedir='example_results', start_epoch=20, use_cuda=True, workers=4)
+
+Begin to eval...
+Img generated in example_results
+

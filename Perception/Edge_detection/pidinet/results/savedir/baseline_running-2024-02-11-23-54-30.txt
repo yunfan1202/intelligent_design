@@ -1,0 +1,15 @@
+=> loading checkpoint from 'BSDS_raw.pth'
+=> loaded checkpoint 'BSDS_raw.pth' successfully
+
+Namespace(checkinfo=True, config='carv4', datadir='example_image', dataset=['Custom'], dil=True, eta=0.3, evaluate='BSDS_raw.pth', evaluate_converted=False, gpu='0', lmbda=1.1, model='pidinet', print_freq=10, sa=True, save_freq=1, savedir='example_results_raw', start_epoch=20, use_cuda=True, workers=4)
+
+Begin to eval...
+Img generated in example_results_raw\imgs_epoch_019_ms
+
+Running test [1/5]
+Running test [2/5]
+Running test [3/5]
+Running test [4/5]
+Running test [5/5]
+
+Done

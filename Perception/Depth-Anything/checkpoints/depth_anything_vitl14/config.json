@@ -1,0 +1,1 @@
+{"encoder": "vitl", "features": 256, "out_channels": [256, 512, 1024, 1024], "use_bn": false, "use_clstoken": false}

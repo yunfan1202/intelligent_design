@@ -1,0 +1,1 @@
+{"encoder": "vits", "features": 64, "out_channels": [48, 96, 192, 384], "use_bn": false, "use_clstoken": false}

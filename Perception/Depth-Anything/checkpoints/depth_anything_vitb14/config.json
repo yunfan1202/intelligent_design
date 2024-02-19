@@ -1,0 +1,1 @@
+{"encoder": "vitb", "features": 128, "out_channels": [96, 192, 384, 768], "use_bn": false, "use_clstoken": false}
