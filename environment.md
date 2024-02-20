@@ -11,7 +11,7 @@
 
 [Conda命令相关](https://blog.csdn.net/miracleoa/article/details/106115730)
 
-在GitHub上下载代码和本文档，点击如下图片中的“Code”和”Download ZIP“
+在GitHub上下载代码和本文档，点击[主页](https://github.com/yunfan1202/intellegent_design)中的“Code”和”Download ZIP“
 ![GitHub](assets/figures/GitHub1.jpg)
 
 ## 图文步骤
