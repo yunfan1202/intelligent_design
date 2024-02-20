@@ -134,14 +134,14 @@ def main(running_file):
     else:
         raise ValueError('no checkpoint loaded')
 
-    test(test_loader, model, args.start_epoch, running_file, args)
+    normal_test(test_loader, model, args.start_epoch, running_file, args)
     # multiscale_test(test_loader, model, args.start_epoch, running_file, args)
     print('##########Time########## %s' % (time.strftime('%Y-%m-%d %H:%M:%S')))
 
     return
 
 
-def test(test_loader, model, epoch, running_file, args):
+def normal_test(test_loader, model, epoch, running_file, args):
     model.eval()
     # img_dir = os.path.join(args.savedir, 'imgs_epoch_%03d' % (epoch - 1))
     img_dir = args.savedir
