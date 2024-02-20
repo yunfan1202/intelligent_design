@@ -11,9 +11,11 @@
 
 [Conda命令相关](https://blog.csdn.net/miracleoa/article/details/106115730)
 
-
+在GitHub上下载代码和本文档，点击如下图片中的“Code”和”Download ZIP“
+![GitHub](assets/figures/GitHub1.jpg)
 
 ## 图文步骤
+
 先去到anaconda的官网: [https://www.anaconda.com/download](https://www.anaconda.com/download),点击Download下载
 
 ![anaconda的官网](assets/figures/anaconda1.jpg)
