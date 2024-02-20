@@ -86,3 +86,7 @@ Environment选existing，然后找到咱刚创建的conda新环境 （…… ana
 然后去[pytorch官网](https://pytorch.org/)往下翻到这个界面, 根据自己的系统情况选择，Compute Platform的CUDA版本这里要选择比自己的系统低的版本，上图中cuda是12.4，所以这里选择CUDA 12.1，如果电脑cuda版本小于12.1就选择CUDA11.8（最好更新一下自己电脑的显卡驱动，这个CUDA version就会上升的）。
 
 ![](assets/figures/pytorch2.jpg)
+
+在命令行复制，输入这个命令开始安装即可
+
+![](assets/figures/pytorch3.jpg)
