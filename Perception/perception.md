@@ -176,7 +176,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 [Cemotion](https://github.com/Cyberbolt/Cemotion)是可以进行中文情感倾向分析的基于BERT (Bidirectional Encoder Representations from Transformers)的方法，会为中文文本返回0～1之间的情感倾向置信度(0为消极，1为积极)。
 
 ### 使用：
-进入Cemotion文件夹，下载```bert-base-chinese```模型和```cemotion_2.0.pt```，放入Cemotion文件夹路径下，如下图所示结构
+进入Cemotion文件夹，下载[bert-base-chinese](https://github.com/yunfan1202/intelligent_design/releases/download/checkpoints/bert-base-chinese.zip)模型文件夹和[cemotion_2.0.pt](https://github.com/yunfan1202/intelligent_design/releases/download/checkpoints/cemotion_2.0.pt)模型，放入Cemotion文件夹路径下，如下图所示结构
 ![](assets/figures/cemotion1.jpg)
 
 再运行```demo.py```，不出意外的话可以看到如下结果
@@ -189,7 +189,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 [emotion2vec](https://github.com/ddlBoJack/emotion2vec)利用自监督学习方法，在大量无标记的公开情感数据上进行预训练，成功地学习到了高度通用的语音情感特征，表现优秀。
 
 ### 使用：
-进入emotion2vec文件夹，将```emotion2vec_base_finetuned```模型文件夹下载好放入checkpoints路径下，如下图所示结构
+进入emotion2vec文件夹，将[emotion2vec_base_finetuned](https://github.com/yunfan1202/intelligent_design/releases/download/checkpoints/emotion2vec_base_finetuned.zip)模型文件夹下载好放入checkpoints路径下，如下图所示结构
 
 ![](assets/figures/emotion2vec1.jpg)
 
