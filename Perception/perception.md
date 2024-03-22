@@ -157,4 +157,44 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 ![](assets/figures/BLIP2.jpg)
 
 
+## 语音识别 
+
+### 代码参考：
+语音是一种常见的交互模态，而[whisper](https://github.com/openai/whisper)
+是一个端到端的语音系统框架，以英语为主，支持包括中文在内的多种语言，以语音识别任务为主，但也支持语音翻译的能力，提供了多种规格的模型以适应不同场景
+
+### 使用：
+首先安装好[ffmpeg](https://blog.csdn.net/qq_57171795/article/details/122842989),进入whisper文件夹，直接运行```demo.py```。会自动下载诸如```base.pt```这样的模型，自动下好的模型路径会放在“C:\Users\你的用户名\.cache\whisper”下
+
+我直接用Window搜索“录音机”，用系统自带的录音机录了一段```examples/test.mp3```，结果如下
+
+![](assets/figures/whisper1.jpg)
+
+## 文本（情绪）分类
+
+### 代码参考：
+[Cemotion](https://github.com/Cyberbolt/Cemotion)是可以进行中文情感倾向分析的基于BERT (Bidirectional Encoder Representations from Transformers)的方法，会为中文文本返回0～1之间的情感倾向置信度(0为消极，1为积极)。
+
+### 使用：
+进入Cemotion文件夹，下载```bert-base-chinese```模型和```cemotion_2.0.pt```，放入Cemotion文件夹路径下，如下图所示结构
+![](assets/figures/cemotion1.jpg)
+
+再运行```demo.py```，不出意外的话可以看到如下结果
+![](assets/figures/cemotion2.jpg)
+
+## 语音（情绪）分类
+准确理解用户的语音指令和意图是构建高效人机交互系统的基础。一个高品质的语音交互系统不仅需要理解字面上的语言内容，更应捕捉到说话者语音中蕴含的情感信息。
+语音相比文本，所能表达的情绪特征是更为丰富的，不管是声调，语气，还是语速，都能一定程度上额外体现人的情感。因此，除了用语音识别转文本，文本再进行情绪分类以外，还需要直接端到端输入语音，输出感知情绪的方法。
+### 代码参考：
+[emotion2vec](https://github.com/ddlBoJack/emotion2vec)利用自监督学习方法，在大量无标记的公开情感数据上进行预训练，成功地学习到了高度通用的语音情感特征，表现优秀。
+
+### 使用：
+进入emotion2vec文件夹，将```emotion2vec_base_finetuned```模型文件夹下载好放入checkpoints路径下，如下图所示结构
+
+![](assets/figures/emotion2vec1.jpg)
+
+再运行```demo.py```（这个需要安装modelscope和funasr等相关依赖的包），同样，测试的还是我自己录的```test.mp3```，不出意外的话可以看到如下结果（可能会有一些warning，但问题不大）
+![](assets/figures/emotion2vec2.jpg)
+
+
 

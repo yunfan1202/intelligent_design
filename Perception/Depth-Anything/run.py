@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     args.img_path = "assets/examples"
     args.outdir = "assets/examples_results"
-    args.encoder = "vitl"  # vits, vitb, vitl
+    args.encoder = "vitl"  # vits, vitb, vitl  下载的是什么模型，记得跟这里对应上
 
     margin_width = 50
     caption_height = 60
