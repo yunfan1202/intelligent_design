@@ -23,7 +23,7 @@
 
 **需要的python库**(库是写好的可以直接引用的代码包)：本文档尽量在同一个环境中运行所有的模型，以便技术之间的组合应用，具体用到的包在[requirements.txt](./requirements.txt)中。
 
-如果您只是单独玩其中某些项目的话，推荐直接按照步骤运行，然后缺什么库就```pip install 库的名字==版本```装什么库，***版本参考[requirements.txt](./requirements.txt)***（一般来说安装最新的库也不会有什么问题，但是如果涉及到诸如transformers这样的库，不同版本可能会报错），也可以通过```pip install -r requirements.txt```一次性全部装好。如果国内安装比较慢，记得[更换pip源](https://zhuanlan.zhihu.com/p/127275233)。
+**如果您只是单独玩其中某些项目的话，推荐直接按照步骤运行，然后缺什么库就```pip install 库的名字==版本```装什么库**，***版本参考[requirements.txt](./requirements.txt)***（一般来说安装最新的库也不会有什么问题，但是如果涉及到诸如transformers这样的库，不同版本可能会报错），也可以通过```pip install -r requirements.txt```一次性全部装好。如果国内安装比较慢，记得[更换pip源](https://zhuanlan.zhihu.com/p/127275233)。
 
 举例：如果需要安装transformer这个库，运行的时候这个语句就是 pip install transformers==4.19.2，"4.19.2"这个版本号可以在requirements.txt里面查到。
 

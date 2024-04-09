@@ -32,7 +32,7 @@
 
 ![](assets/figures/anaconda4.jpg)
 
-同样，如果是第一次装，为了省事，可以把“add… varariable”勾上， 这样就不用再自己去添加环境变量了（如果要自己添加，可以参考[资料](https://zhuanlan.zhihu.com/p/653767179)），下面的clear cache也可以勾
+同样，如果是第一次装，为了省事，**最好把“add… varariable”勾上， 这样就不用再自己去添加环境变量了**（如果要自己添加，可以参考[资料1](https://blog.csdn.net/weixin_43914658/article/details/108785084)和[资料2](https://zhuanlan.zhihu.com/p/382980557)），下面的clear cache也可以勾
 
 ![](assets/figures/anaconda5.jpg)
 
@@ -42,7 +42,7 @@
 
 ![命令行](assets/figures/anaconda6.jpg)
 
-输入```conda env list```看下环境，确实装上了就会像这样（如果不行，可能是conda没加到环境变量里去）
+输入```conda env list```看下环境，确实装上了就会像这样（如果不行，可能是conda没加到环境变量里去，参考[资料1](https://blog.csdn.net/weixin_43914658/article/details/108785084)和[资料2](https://zhuanlan.zhihu.com/p/382980557)）
 
 ![](assets/figures/anaconda7.jpg)
 
