@@ -2,6 +2,22 @@
 
 AIGC是生成式AI创造力的核心，涉及文本、图像、视频、代码、3D模型等内容的生成。文本生成在教育、法律和对话业务中有广泛应用；图像、视频和3D模型已在营销、影视创作和游戏等领域开花结果。对于大家来说AI绘画是大家最常接触的领域，目前的主流是 Stable diffusion 和 Midjourney 。Midjourney 开箱即用，对新手非常友好，但不免费，Stable diffusion 相对 Midjourney 来说，专业性更强，不易上手，但更灵活，模型生态丰富。此文档将主要介绍Stable diffusion的使用以及如何整合其他的模型一起使用。
 
+## BK-SDM
+如果显存有限，又只想快速的体验一下文生图的模型，这里有一个轻量级的基于知识蒸馏的“stable diffusion”
+([Block-removed Knowledge-distilled Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui))，small版本只需要大概4G显存即可运行。
+
+### 使用
+进入BK-SDM文件夹，下载好[bk-sdm-small](https://hf-mirror.com/nota-ai/bk-sdm-small/tree/main)模型文件夹，放入创建的checkpoints(除了比较大的.bin的模型文件，其他小文件我都手动下好了)里面，可以手动下载，把路径对应好，这里主要是safety_checker，text_encoder，unet和vae这几个子文件夹下面需要下载.bin的模型。
+![](assets/figures/BK-SDM3.jpg) 
+
+也可以参考[huggingface](https://huggingface.co/)的镜像站[hf-mirror.com](https://hf-mirror.com/)下面的下载说明。
+
+然后就可以运行BK-SDM文件夹下的demo.py了，比如prompt是”a tropical bird sitting on a branch of a tree“时，生成结果会是随机的这样子：
+![](assets/figures/BK-SDM1.png) 
+![](assets/figures/BK-SDM2.png)
+
+但也会生成看上去有点怪的，可能需要调一下prompts，以及多生成几次择优。
+
 ## Stable diffusion
 
 这里推荐大家使用 Stable diffusion的Web UI ([项目地址](https://github.com/AUTOMATIC1111/stable-diffusion-webui))，操作更简单，整合其他的模型也更方便。
