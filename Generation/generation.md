@@ -6,7 +6,9 @@ AIGC是生成式AI创造力的核心，涉及文本、图像、视频、代码�
 如果显存有限，又只想快速的体验一下文生图的模型，这里有一个轻量级的基于知识蒸馏的“Stable Diffusion”，即“Block-removed Knowledge-distilled Stable Diffusion”
 。([Github项目地址](https://github.com/Nota-NetsPresso/BK-SDM))，其small版本的模型只需要大概4G显存即可运行。
 ### 使用
-进入BK-SDM文件夹，下载好[bk-sdm-small](https://hf-mirror.com/nota-ai/bk-sdm-small/tree/main)模型文件夹里的所有文件，放入创建的checkpoints里面，可以手动下载，把路径对应好 (除了比较大的.bin的模型文件，其他小文件我都手动下好了)。这里主要是safety_checker，text_encoder，unet和vae这几个子文件夹下面还需要下载.bin的模型。
+进入BK-SDM文件夹，下载好[bk-sdm-small](https://hf-mirror.com/nota-ai/bk-sdm-small/tree/main)模型文件夹里的所有文件，放入创建的checkpoints里面，可以手动下载，把路径对应好 (除了比较大的.bin的模型文件，其他小文件我都手动下好了)。
+
+这里主要是safety_checker，text_encoder，unet和vae这几个子文件夹下面还需要下载.bin的模型 （如果想运行“torch_dtype=torch.float16”版本的量化模型，才下载带.fp16.bin的模型，这个显存占用还要更小一点）。
 
 ![](assets/figures/BK-SDM3.jpg) 
 
