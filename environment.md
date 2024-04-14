@@ -77,7 +77,7 @@ Environment选existing，然后找到咱刚创建的conda新环境 （…… ana
 这个时候下面应该可以直接Use existing environment了，选中我们之前创建的pytorch即可，这样就相当于你在Pycharm里面使用了名为pytorch的conda环境运行代码。
 ![](assets/figures/anaconda14.jpg)
 
-## Pytorch的安装 (重要！)
+## Pytorch深度学习框架的安装 (重要！)
 有了pycharm后，其实就可以在pycharm的左下角点击terminal按钮，来使用命令行的功能了(就是跟Windows键+R，然后cmd呼出来的命令行是一个作用)，请确保左侧有个"(pytorch)"，意思是你现在在咱们刚才创建的名为“pytorch”的conda环境中。
 
 ![](assets/figures/pycharm1.jpg)
