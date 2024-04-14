@@ -38,7 +38,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 
 ![](assets/figures/face2.jpg)
 
-然后可以将上面检测到的人脸从图片中切下来，进行后续的情绪识别。进入到Face/face_recognition，模型[PrivateTest_model.t7](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/PrivateTest_model.t7)下好后放到checkpoints目录下，直接运行```visualize.py```即可，
+然后可以将上面检测到的人脸从图片中切下来，进行后续的情绪识别。进入到Face/face_recognition，模型[PrivateTest_model.t7](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/PrivateTest_model.t7)下好后放到自己创建的checkpoints目录下，直接运行```visualize.py```即可，
 
 ![](assets/figures/face3.jpg)
 
@@ -60,7 +60,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 [Depth-Anything](https://github.com/LiheYoung/Depth-Anything)
 
 ### 使用：
-进入Depth-Anything文件夹，把[depth_anything_vitb14](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/depth_anything_vitb14.zip)或者[depth_anything_vitl14](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/depth_anything_vitl14.zip)或者[depth_anything_vits14](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/depth_anything_vits14.zip)相关文件下载好放入checkpoints（主要包含了config.json和pytorch_model.bin）。
+进入Depth-Anything文件夹，把[depth_anything_vitb14](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/depth_anything_vitb14.zip)或者[depth_anything_vitl14](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/depth_anything_vitl14.zip)或者[depth_anything_vits14](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/depth_anything_vits14.zip)相关文件下载好放入自己创建的checkpoints（主要包含了config.json和pytorch_model.bin）。
 
 ![](assets/figures/depth1.jpg)
 
@@ -77,7 +77,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 
 [segment-anything](https://github.com/facebookresearch/segment-anything)
 
-进入segment-anything文件夹，把[sam_vit_b_01ec64.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)或者[sam_vit_h_4b8939.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)或者[sam_vit_l_0b3195.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth)模型下载好放入checkpoints。
+进入segment-anything文件夹，把[sam_vit_b_01ec64.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)或者[sam_vit_h_4b8939.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)或者[sam_vit_l_0b3195.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth)模型下载好放入自己创建的checkpoints文件夹下。
 
 除了其他需要的包，还需要先
 在segment-anything文件夹下```pip install -e```（参考[这里](./segment-anything/README.md)）
@@ -129,7 +129,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 [CLIP](https://github.com/openai/CLIP)
 
 ### 使用：
-进入CLIP文件夹，把[ViT-B-32.pt](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/ViT-B-32.pt)模型下好放入checkpoints文件夹里面，直接运行```demo.py```即可。CLIP用了大量的图像文本对训练，因此能一定程度上通过相似度对比来对齐找到符合文本描述的图片。此处"a diagram", "a dog", "a cat"中，"a diagram"是与这张图片相似度最高的(>0.99)
+进入CLIP文件夹，把[ViT-B-32.pt](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/ViT-B-32.pt)模型下好放入自己创建的checkpoints文件夹里面，直接运行```demo.py```即可。CLIP用了大量的图像文本对训练，因此能一定程度上通过相似度对比来对齐找到符合文本描述的图片。此处"a diagram", "a dog", "a cat"中，"a diagram"是与这张图片相似度最高的(>0.99)
 
 ![](assets/figures/CLIP1.png)
 
@@ -148,7 +148,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 是一个兼顾图文理解和生成的多模态模型，可以用来做图像描述(Image Captioning)，问答(Visual Question Answering)等，同时也能做到CLIP的提特征，零样本分类（但是具体用哪一种特征更合适，还是得看实际需求，自己试了才知道）
 
 ### 使用：
-进入BLIP文件夹，下好[bert模型(bert-base-uncased文件夹，pytorch版本)](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/bert-base-uncased.zip)、[model_base.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base.pth)、[model_base_capfilt_large.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth)、[model_base_retrieval_coco.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_retrieval_coco.pth)、[model_base_vqa_capfilt_large.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_vqa_capfilt_large.pth)等预训练模型（按需下载），都放入checkpoints文件夹。如果需要不同版本大小的模型，原本的[BLIP Pre-trained checkpoints](https://github.com/salesforce/BLIP?tab=readme-ov-file#pre-trained-checkpoints)上也都有。
+进入BLIP文件夹，下好[bert模型(bert-base-uncased文件夹，pytorch版本)](https://github.com/yunfan1202/intellegent_design/releases/download/checkpoints/bert-base-uncased.zip)、[model_base.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base.pth)、[model_base_capfilt_large.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth)、[model_base_retrieval_coco.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_retrieval_coco.pth)、[model_base_vqa_capfilt_large.pth](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_vqa_capfilt_large.pth)等预训练模型（按需下载），都放入自己创建的checkpoints文件夹。如果需要不同版本大小的模型，原本的[BLIP Pre-trained checkpoints](https://github.com/salesforce/BLIP?tab=readme-ov-file#pre-trained-checkpoints)上也都有。
 
 ![](assets/figures/BLIP1.jpg)
 
@@ -189,7 +189,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 [emotion2vec](https://github.com/ddlBoJack/emotion2vec)利用自监督学习方法，在大量无标记的公开情感数据上进行预训练，成功地学习到了高度通用的语音情感特征，表现优秀。
 
 ### 使用：
-进入emotion2vec文件夹，将[emotion2vec_base_finetuned](https://github.com/yunfan1202/intelligent_design/releases/download/checkpoints/emotion2vec_base_finetuned.zip)模型文件夹下载好放入checkpoints路径下，如下图所示结构
+进入emotion2vec文件夹，将[emotion2vec_base_finetuned](https://github.com/yunfan1202/intelligent_design/releases/download/checkpoints/emotion2vec_base_finetuned.zip)模型文件夹下载好放入自己创建的checkpoints路径下，如下图所示结构
 
 ![](assets/figures/emotion2vec1.jpg)
 

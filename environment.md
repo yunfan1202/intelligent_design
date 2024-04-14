@@ -76,4 +76,22 @@ Environment选existing，然后找到咱刚创建的conda新环境 （…… ana
 
 这个时候下面应该可以直接Use existing environment了，选中我们之前创建的pytorch即可
 
+## Pytorch的安装 (重要！)
+这个时候下面应该可以直接Use existing environment了，选中我们之前创建的pytorch即可
+
+有了pycharm后，其实就可以在pycharm的左下角点击terminal按钮，来使用命令行的功能了(就是跟Windows键+R，然后cmd呼出来的命令行是一个作用)，请确保左侧有个"(pytorch)"，意思是你现在在咱们刚才创建的名为“pytorch”的conda环境中。
+
+![](assets/figures/pycharm1.jpg)
+
+输入nvidia-smi查看自己电脑的显卡情况，可以看到这里有个CUDA Version：12.4，
+
+![](assets/figures/pytorch1.jpg)
+
+然后去[pytorch官网](https://pytorch.org/)往下翻到这个界面, 根据自己的系统情况选择，Compute Platform的CUDA版本这里要选择比自己的系统低的版本，上图中cuda是12.4，所以这里选择CUDA 12.1，如果电脑cuda版本小于12.1就选择CUDA11.8（最好更新一下自己电脑的显卡驱动，这个CUDA version就会上升的）。
+
+![](assets/figures/pytorch2.jpg)
+
+复制图中的命令，在终端命令行中粘贴，输入这个命令开始安装即可
+
+![](assets/figures/pytorch3.jpg)
 ![](assets/figures/anaconda14.jpg)
