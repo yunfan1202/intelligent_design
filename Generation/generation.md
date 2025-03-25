@@ -64,10 +64,4 @@ IP Adapter是腾讯lab发布的一个新的Stable Diffusion适配器，它的作
 
 AnimateDiff也可以整合到Stable diffusion中，在Stable diffusion的“扩展（extensions）”菜单，选择“可用（available）”，点击“加载自（load from）”，搜索“animatediff”，点击“安装（install）。更详细的安装和使用细节可以参考[这篇文章](https://zhuanlan.zhihu.com/p/680566781)。
 
-## DragGAN
-
-DragGAN 是一种用于直观基于点的图像编辑的交互方法([项目地址](https://github.com/XingangPan/DragGAN))，按照项目主页的介绍的配置方法，完成配置后运行DragGAN GUI，即可通过简单的拖动点实现图像的编辑。
-
-![img](assets/figures/draggan.png)
-
 以上介绍的项目只是AI用于生成的冰山一角，还有更多有趣的应用值得去探索，推荐大家可以去访问[huggingface](https://huggingface.co/spaces))，这里面有很多可以在线运行的Demo，可以供大家尝试。
