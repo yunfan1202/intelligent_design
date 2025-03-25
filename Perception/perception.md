@@ -45,6 +45,7 @@ Delving-into-Crispness: [[Paper](https://arxiv.org/abs/2306.15172)], [[Code](htt
 ![](assets/figures/face4.jpg)
 
 ## 人体姿态估计 (Human pose estimation)
+还有许多其他不错的代码，比如[mediapipe](https://github.com/google-ai-edge/mediapipe)以及对应的[examples](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples),可以用[树莓派系列代码](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/pose_landmarker/raspberry_pi)，参考[该教程](https://blog.csdn.net/weixin_43034503/article/details/144484158)
 ### 代码参考：
 原[openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)需要配置C++环境，有兴趣有条件的可以去玩玩，这里还是找了个pytorch版本的[pytorch-openpose](https://github.com/Hzzone/pytorch-openpose)
 
