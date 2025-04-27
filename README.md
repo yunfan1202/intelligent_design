@@ -31,7 +31,7 @@
 本文档整理了大部分先进、通用、运行友好的AI感知应用，目前主要包含计算机视觉相关技术：图像的分类、分割、深度估计、边缘检测，人脸检测与分类，人体姿态估计，以及文本，语音的识别与情感分类等任务。
 
 
-详情见[这里](Perception/perception.md)
+详情见[perception.md](Perception/perception.md)
 
 目前已整理：
 [CLIP](https://github.com/openai/CLIP), 
@@ -49,7 +49,7 @@
 由于生成类技术极快的发展速度，本文档主要整理了stable diffusion和controlnet等相关技术。
 
 
-详情见[这里](Generation/generation.md)
+详情见[generation.md](Generation/generation.md)
 
 目前已整理：
 [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly), 
@@ -59,6 +59,17 @@
 
 [InstantID](https://github.com/InstantID/InstantID)
 
+
+## 大语言模型 (Large Language Model)
+
+
+
+详情见[LLM.md](LLM/LLM.md)
+
+目前已整理：
+Deepseek以及大模型用于NLP相关应用的实践，部分收集的觉得不错的资料 
+
+
 ## Citation
 
 若该文档对您有所帮助，请在页面右上角点个Star⭐支持一下，谢谢！
@@ -67,5 +78,5 @@
 
 ## Acknowledgements
 1. 本文档主要是收集并在已有的工作上整理，首先感谢所有优秀的开源技术项目的贡献！
-2. 本文档内容由[本人](https://github.com/yunfan1202)与[本实验室](http://design.hnu.edu.cn/info/1023/5787.htm)的老师同学们共同完成，感谢大家的贡献！
+2. 本文档内容由[本人](https://yunfan1202.github.io/)与[本实验室](https://grzy.hnu.edu.cn/site/index/liufang)的老师同学们完成，感谢大家的建议与贡献！
 3. 本文档受[learning_research](https://github.com/pengsida/learning_research)启发不少，这是个非常优秀的科研经验总结分享 (针对计算机视觉、图形学领域)，希望本文档能配合这份科研经验，在为减少技术门槛方面提供助力。
