@@ -22,9 +22,7 @@ Deepseek作为开源大模型，很多其他大厂也都有部署，既可以直
 
 ![](assets/figures/deepseek3.jpg)
 
-如果没有免费额度的话，运行前是需要给你的deepseek账号[在这里充值的](https://platform.deepseek.com/usage)。
-
-接着，就是用轻松愉快的用python调用deepseek大模型的API了(如果报错了，常见错误可参考这里[对应的错误码](https://api-docs.deepseek.com/zh-cn/quick_start/error_codes))，可以进入LLM文件夹，直接运行```deepseek.py```
+接着，就是用轻松愉快的用python调用deepseek大模型的API了，可以进入LLM文件夹，直接运行```deepseek.py```
 
 问deepseek-chat（也就是DeepSeek-V3）“你好，你是谁？9.11和9.8哪个更大?”的话，我的测试回答如下：
 
