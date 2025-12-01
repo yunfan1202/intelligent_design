@@ -1,4 +1,4 @@
-# Intellegent Design (智能设计)
+# Intelligent Design (智能设计)
 
 ## Motivation of this repository
 
